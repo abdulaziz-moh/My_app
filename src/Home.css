@@ -1,0 +1,111 @@
+/* --- 1. Global Reset (Critical for 100vh layout) --- */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.app-container .search-input input{
+    padding: 10px;
+    border-radius: 1rem;
+    /* background-color: green; */
+}
+
+.top-nav {
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #333;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky; 
+    top: 0; 
+    z-index: 10;
+}
+.nav-bar-icons svg {
+    padding: 1rem;
+}
+
+.content-area {
+    background-color: #f0f0f0;
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* IMPORTANT — prevents whole page scrolling */
+}
+
+.left {
+    width: 250px;
+    padding: 10px;
+    /* width: 25%;
+    padding: 20px; */
+    overflow: hidden;
+    
+}
+
+.left .profile{
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background-color: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.drop-down{    
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    
+}
+.drop-down ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.drop-down li {
+    padding: 10px 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.drop-down li:hover {
+    background: #f0f0f0;
+}
+
+/* --- 6. Right Section (Scrollable) --- */
+.right {
+    /* background-color: white; */
+    flex-grow: 1; 
+    padding: 20px;
+    /* width: 75%; */
+    height: 100%;
+    overflow-y: scroll;
+    /* overflow-y: auto;  */
+    
+}
+
+.post{
+    padding: 1rem;
+    margin:1rem;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+.post .post-header{
+    display: flex;
+    align-items: center;
+}
+.post .post-header a{
+    padding-right: 1rem;
+}
