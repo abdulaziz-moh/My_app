@@ -1,0 +1,87 @@
+.nav-bar{
+    padding: 2rem;
+    /* height: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(226, 238, 249);
+}
+.icons{
+    display: flex;
+    gap:1rem;
+}
+
+.product-card{
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+/* -------------------------------- */
+
+/* Container for the whole list */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Individual Card Styling */
+.member-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #f0f0f0;
+}
+
+/* Typography */
+.member-name {
+  margin: 0 0 4px 0;
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.member-role {
+  margin: 0 0 12px 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.member-bio {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
